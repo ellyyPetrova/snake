@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SnakeGame
+{
+    public class Dot
+    {
+        public Dot(char symbol, Coordinate position)
+        {
+            this.Symbol = symbol;
+            this.Position = position;
+        }
+        public Coordinate Position
+        {
+            get;
+            set;
+        }
+
+        public char Symbol
+        {
+            get;
+            set;
+        }
+        public void Render()
+        {
+            Console.SetCursorPosition(this.Position.x, this.Position.y);
+            Console.WriteLine(this.Symbol);
+        }
+    }
+}
