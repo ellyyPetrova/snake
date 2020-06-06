@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SnakeGame
+{
+    public static class GlobalConstants
+    {
+        public static readonly int ConsoleWidth = 70;
+        public static readonly int ConsoleHeight = 30;
+    }
+}
